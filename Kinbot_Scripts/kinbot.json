@@ -1,0 +1,21 @@
+{
+"title": "Toluene-ROO",
+"queuing" : "slurm",
+"queue_name" : "normal",
+"queue_template" : "job_template.text",
+"charge" : 0,
+"mult" : 2,
+"method" : "b3lyp",
+"basis" : "6-311++g*",
+"qc" : "gauss",
+"qc_command" : "g16",
+"conformer_search" : 0,
+"reaction_search" : 1,
+"rotor_scan" : 0,
+"high_level" : 0,
+"pes" : 0,
+"barrier_threshold" : 120.0,
+"ppn" : 16,
+
+"smiles" : "[O]OCC1=CC=CC=C1"
+}
