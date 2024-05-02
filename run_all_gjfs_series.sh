@@ -10,14 +10,16 @@
 #SBATCH --mail-user=prsh1291@colorado.edu
 
 module purge
-module load "gaussian/16_avx2"
+module load gaussian/16_avx2
 
 FILES=*.gjf
 for f in $FILES
 do
- name=$(echo "$f" | cut -f 1 -d '.')
- g16 <$name.gjf> $name_${date + %Y-%m-%d}.log
-  echo "Processing $name file..."
+ DATE=$(date +"%Y-%m-%d")
+ name=$(echo "$f" | cut -f 1 -d ".")
+ LogName="${name}_${DATE}
+" g16 <$name.gjf> $LogName.log
+ echo "Processing $name file..."
 done
 
 date
