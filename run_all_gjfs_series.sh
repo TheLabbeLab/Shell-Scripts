@@ -18,7 +18,7 @@ do
  DATE=$(date +"%Y-%m-%d")
  name=$(echo "$f" | cut -f 1 -d ".")
  LogName="${name}_${DATE}
-" g16 <$name.gjf> $LogName.log
+ g16 <$name.gjf> $LogName.log
  echo "Processing $name file..."
 done
 
