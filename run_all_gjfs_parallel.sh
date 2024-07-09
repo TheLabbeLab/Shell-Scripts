@@ -10,7 +10,6 @@
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=userid@colorado.edu
 
-
 module purge
 module load gaussian/g16_c.02
 
