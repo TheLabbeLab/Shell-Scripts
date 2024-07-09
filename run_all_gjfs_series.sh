@@ -10,7 +10,10 @@
 #SBATCH --mail-user=prsh1291@colorado.edu
 
 module purge
-module load gaussian/16_avx2
+module load gaussian/g16_c.02
+
+# Always specify a scratch directory on a fast storage space (not /home or /projects!)
+export GAUSS_SCRDIR="$(pwd)"
 
 FILES=*.gjf
 for f in $FILES
