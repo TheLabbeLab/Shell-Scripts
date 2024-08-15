@@ -4,5 +4,5 @@
 #SBATCH -c {ppn}
 #SBATCH -q {queue_name}
 #SBATCH --time=24:00:00
-#SBATCH --account=ucb273_peak1
+#SBATCH --account=ucb273_peak2
 {slurm_feature}
